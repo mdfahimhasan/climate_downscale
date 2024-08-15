@@ -35,11 +35,6 @@ The 4km Improved Resolution ARD was integrated in clustering app. It imporved re
 - Improved Resolution of the clustering result
 - Change in clustering extent with better understanding of the testing field’s environmental types
 
-The left plot is the clustering app result with current PROD low resolution weather datasets. The right plot is the clustering result integrated with 4km improved resolution ARD.
-
-![image](https://github.com/mdfahimhasan/data-pipeline-env-model/assets/77580408/974d1925-050c-4165-ae3a-a887fbe3f25f)
-
-
 
 
 
