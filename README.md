@@ -6,8 +6,6 @@ The motivation of  this project comes from the `Environmental Clustering App` de
 ## Resolution Improvement of Weather Data
 The AA dataset in of low spatial resolution (28km) with extended (1979-present) daily temporal records. The BB historical weather datasets if of 4km and BB High-Resolution precipitation dataset if of 8km high spatial resolution, but with limited (2015-2023) daily temporal records. Our goal is to use AA datasets as input variables, along with other datasets like elevation, and BB datasets as target/training variable in a machine/deep learning (ML/DL) based framwework. The ML/DL models will generate high spatial resolution (4km) weather datasets for a 20 year timeline, thus resolvng the resolution issue of weather data in the clustering app. 
 
-![image](https://github.com/mdfahimhasan/data-pipeline-env-model/assets/77580408/9beb1aee-1772-4cf8-8e52-9a89026cda69)
-
 ## Analytysis-Ready Dataset (ARD) Frameworks
 The ML/DL models along with spatial interpolation techniques (e.g. Bilinear Interpolation) will be used in a framework that will generate Analytysis-Ready Dataset (ARD) for the Environmental Clustering App. In this pipeline, two versions of the framework for two spatial resolutions will be made. These two versions of the framework will create ARDs in 4km and 100m resolution. The `4km resolution ARD` consists of weather, soil, and elevation datasets. The `100m resolution ARD` consists of satellite data along with the weather, soil, and elevation datasets. Also, the 100m resolution ARD has only been developed for Woodland Site only as satellite data is available for this spatial extent only. In contrast, the 4km resolution ARD covers the entire Region of Interest (ROI) of this project, a part of Central valley, California.
 
