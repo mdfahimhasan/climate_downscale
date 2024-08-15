@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# OVERVIEW
+# This script creates and configures the data_pipeline environment.
+
+sudo -u ec2-user -i <<EOF
+
+# save packages in python3
+source activate python3
+
+# installing packages
+pip install geopandas
+pip install rasterio
+pip install pandas-gbq
+pip install google-cloud-bigquery
+pip install h3
+pip install ipynb
+pip install lightgbm
+pip install dask
+pip install GemGIS
+pip install pyvista
+
+# Deactivate environment
+source deactivate
+
+EOF
