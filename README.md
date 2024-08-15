@@ -1,10 +1,10 @@
 # Spatial Resolution Improvement (Downscaling) of Daily-scale Weather Datasets Using Machine and Deep Learning 
 
 ## Motivation
-The motivation of  this project comes from the `Environmental Clustering App` developed by `Bayer Crop Science Veg R&D APD`. This App enables rapid, effective and scalable production of clustering maps across various crops and regions, and is used by teams across Veg R&D and in multiple Bayer organizations unlocking multiple potential business values, such as understanding of germplasm response, G x E modeling, testing footprint optimization, finding alternative testing location, market expansion, etc. The app needs 20-yrs of weather data, soil, elevation data, but the bottleneck for improved resolution arises due to unavailability of high-resolution long-term weather data. Currently, the app uses weather datasets from ERA5 (low spatial resolution – long temporal records) and TWC (high spatial resolution – short temporal records) from Crop Science Warehouse (CSW). But there is no sources of high-resolution long-term weather datasets in CSW. Here, we have build a framework that uses machine learning/deep learning models and spatial interpolations methods to harmonize all datasets required for the ENvironmental Clustering App to high resolution, specially the weather datasets.
+The motivation of  this project comes from the `Environmental Clustering App` developed by `X company`. This app have various business values, such as understanding of germplasm response, G x E modeling, testing footprint optimization, finding alternative testing location, market expansion, etc. The app needs 20-yrs of weather data, soil, elevation data, but the bottleneck for improved resolution arises due to unavailability of high-resolution long-term weather data. Currently, the app uses weather datasets from ERA5 (low spatial resolution – long temporal records) and TWC (high spatial resolution – short temporal records) from data warehouse. But there is no sources of high-resolution long-term weather datasets in warehouse. Here, we have build a framework that uses machine learning/deep learning models and spatial interpolations methods to harmonize all datasets required for the clustering app to high resolution, specially the weather datasets.
 
 ## Resolution Improvement of Weather Data
-The ERA5 dataset in of low spatial resolution (28km) with extended (1979-present) daily temporal records. The Weather Company (TWC) historical weather datasets if of 4km and TWC High-Resolution precipitation dataset if of 8km high spatial resolution, but with limited (2015-2023) daily temporal records. Our goal is to use ERA5 datasets as input variables, along with other datasets like elevation, and TWC datasets as target/training variable in a machine/deep learning (ML/DL) based framwework. The ML/DL models will generate high spatial resolution (4km) weather datasets for a 20 year timeline, thus resolvng the resolution issue of weather data in the Environmental CLustering App. 
+The ERA5 dataset in of low spatial resolution (28km) with extended (1979-present) daily temporal records. The Weather Company (TWC) historical weather datasets if of 4km and TWC High-Resolution precipitation dataset if of 8km high spatial resolution, but with limited (2015-2023) daily temporal records. Our goal is to use ERA5 datasets as input variables, along with other datasets like elevation, and TWC datasets as target/training variable in a machine/deep learning (ML/DL) based framwework. The ML/DL models will generate high spatial resolution (4km) weather datasets for a 20 year timeline, thus resolvng the resolution issue of weather data in the clustering app. 
 
 ![image](https://github.com/mdfahimhasan/data-pipeline-env-model/assets/77580408/9beb1aee-1772-4cf8-8e52-9a89026cda69)
 
@@ -26,13 +26,12 @@ The four major processes and script running sequence is provided below-
 
 ## Other Folders in Repository
 The following folders in the repo consists of the listed materials
-- presentation : Two presentaion slide decks presented in `Enterprise Weather Decision Series` and `Vegetable R&D Intern` talks.
 - reference_rasters : The reference rasters used throughout the improved resolution ARD development pipeline.
 - shapefiles_gids : Shapefiles of ROI, ROI Buffer, and others used in the pipeline.
 
 
 ## Improved Resolution 4km ARD Integrated Result
-The 4km Improved Resolution ARD was integrated in Environmental Clustering App. It imporved resolution of the clustering app result. Two (02) major improvements were evident-
+The 4km Improved Resolution ARD was integrated in clustering app. It imporved resolution of the clustering app result. Two (02) major improvements were evident-
 - Improved Resolution of the clustering result
 - Change in clustering extent with better understanding of the testing field’s environmental types
 
